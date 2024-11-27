@@ -62,7 +62,7 @@
     const conflictsCount = Object.keys(nodesTested.conflict).length;
 
     if (conflictsCount > 0) {
-      console.info("%cConflict".concat(conflictsCount > 1 ? 's' : '', " found:"), 'color: darkred; font-size: large');
+      console.info("%cConflict".concat(conflictsCount > 1 ? 's' : '', " found:"), 'color: darkred; font-size: 15px');
       const data = {};
 
       for (let key in nodesTested.conflict) {
@@ -80,7 +80,7 @@
     const noConflictsCount = Object.keys(nodesTested.noConflict).length;
 
     if (noConflictsCount > 0) {
-      console.info("%cNo conflict".concat(noConflictsCount > 1 ? 's' : '', " found with ").concat(noConflictsCount === 1 ? 'this' : 'these', ":"), 'color: green; font-size: large');
+      console.info("%cNo conflict".concat(noConflictsCount > 1 ? 's' : '', " found with ").concat(noConflictsCount === 1 ? 'this' : 'these', ":"), 'color: green; font-size: 15px');
       const data = {};
 
       for (let key in nodesTested.noConflict) {
@@ -98,7 +98,7 @@
     const timeOutCount = Object.keys(timedOutTests).length;
 
     if (timeOutCount > 0) {
-      console.info("%cLeftovers--we timed out before collecting test results for ".concat(timeOutCount === 1 ? 'this' : 'these', ":"), 'color: blue; font-size: large');
+      console.info("%cLeftovers--we timed out before collecting test results for ".concat(timeOutCount === 1 ? 'this' : 'these', ":"), 'color: blue; font-size: 15px');
       const data = {};
 
       for (let key in timedOutTests) {
@@ -830,7 +830,7 @@
     console.group('Font Awesome Detector');
 
     if (testCount === 0) {
-      console.info('%cAll Good!', 'color: green; font-size: large');
+      console.info('%cAll Good!', 'color: green; font-size: 15px');
       console.info('We didn\'t find anything that needs testing for conflicts. Ergo, no conflicts.');
     } else {
       console.info("Testing ".concat(testCount, " possible conflicts."));
