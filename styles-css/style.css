@@ -1,12 +1,10 @@
 /*box*/
 .droit {
-    background-color: blue;
     width: 160px;
     height: 160px;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    color: white;
     transition: transform .1s;
     position: relative;
     }
@@ -34,6 +32,14 @@
 
 .sectiondroit {
     margin: 0px 200px 0px 200px;
+}
+
+.divtempo{
+    background-color: #BCD8F9 ;
+    width: 1450px;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
 }
 /*Fin box*/
 
